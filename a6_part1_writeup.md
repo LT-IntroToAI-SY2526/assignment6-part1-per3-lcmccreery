@@ -10,7 +10,7 @@
 ### Question 1: R² Score Interpretation
 What does the R² score tell you about your model? What does it mean if R² is close to 1? What if it's close to 0?
 
-**YOUR ANSWER:**
+I tells me that there is a high correlation between studying hours and test scores. Since it is close to one, the model is accurate but if it was close to 0, than it would be a bad model and have bad correlation. 
 
 
 
@@ -20,7 +20,7 @@ What does the R² score tell you about your model? What does it mean if R² is c
 ### Question 2: Mean Squared Error (MSE)
 What does the MSE (Mean Squared Error) mean in plain English? Why do you think we square the errors instead of just taking the average of the errors?
 
-**YOUR ANSWER:**
+The Mean Squared Error tells me, on average, how far off my predictions are from the real scores. The bigger the number, the worse the predictions. We square the errors so that big mistakes count more than small ones, and so negative and positive errors don’t cancel each other out. If we didn’t square them, a prediction that’s too high and one that’s too low could average to zero even though the model made mistakes.
 
 
 
@@ -32,7 +32,8 @@ Would you trust this model to predict a score for a student who studied 10 hours
 - What's the maximum hours in your dataset?
 - What happens when you make predictions outside the range of your training data?
 
-**YOUR ANSWER:**
+I would be a little careful about predicting for a student who studied 10 hours. The highest number of hours in the dataset is around 9.6, which is close, but still outside the range of the training data.
+When you predict outside the range of your data, the model might guess something unrealistic because it has never seen that kind of example before.
 
 
 
@@ -47,7 +48,7 @@ Looking at your scatter plot, describe the relationship between hours studied an
 - Linear or non-linear?
 - Positive or negative?
 
-**YOUR ANSWER:**
+The scatter plot shows a strong, positive, and mostly linear relationship. As the number of hours studied increases, the test score also increases in a predictable way. The points are fairly close to a line, which means the pattern is strong.
 
 
 
@@ -58,9 +59,9 @@ Looking at your scatter plot, describe the relationship between hours studied an
 What are some real-world factors that could affect test scores that this model doesn't account for? List at least 3 factors.
 
 **YOUR ANSWER:**
-1. 
-2. 
-3. 
+1. How difficult the test was
+2. How well the student slept or their stress level
+3. Intelligence or prior knowledge in the subject
 
 
 ---
@@ -70,7 +71,7 @@ What are some real-world factors that could affect test scores that this model d
 ### Question 6: Train/Test Split
 Why do we split our data into training and testing sets? What would happen if we trained and tested on the same data?
 
-**YOUR ANSWER:**
+We split the data so the model can learn from one part and be tested on data it has never seen before. If we trained and tested on the same data, the model would look perfect, but only because it already saw the answers.
 
 
 
@@ -80,7 +81,7 @@ Why do we split our data into training and testing sets? What would happen if we
 ### Question 7: Most Challenging Part
 What was the most challenging part of this assignment for you? How did you overcome it (or what help do you still need)?
 
-**YOUR ANSWER:**
+The most challenging part of the assignment was the beginning because I didn't really understand what to type in to finish te function. After finishing one though, I started to understand what to do. 
 
 
 
@@ -95,7 +96,14 @@ Describe one real-world problem you could solve with linear regression. What wou
 - **Target (Y):** 
 - **Why this relationship might be linear:**
 
-**YOUR ANSWER:**
+A real-world problem I could solve with linear regression is predicting how many minutes it will take to get to school based on distance.
+
+Feature (X): distance from home to school
+
+Target (Y): travel time
+
+Why it might be linear:
+Usually, the farther you have to travel, the longer it takes. It’s not perfect, but it’s a relationship that is mostly straight-line for everyday travel.
 
 
 
